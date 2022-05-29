@@ -16,7 +16,7 @@
     "build": "del-cli dist && tsc",
     "prepack": "yarn build",
     "lint": "eslint . --ext ts",
-    "test": "tsc --noEmit && jest --coverage",
+    "test": "echo \"Error: no test specified\"",
     "release": "git pull && standard-version && git push --follow-tags",
     "prepare": "husky install"
   },
