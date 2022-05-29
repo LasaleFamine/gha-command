@@ -20,6 +20,8 @@ const run = async () => {
     ignoreReturnCode: true,
   };
 
+  core.debug(`Running command: ${runCommand}`);
+
   const exitCode = await exec(runCommand, undefined, options);
   core.debug(`Command exited with code ${exitCode}.`);
   core.debug(`stdout: ${stdout.contents}`);

@@ -3424,6 +3424,7 @@ const run = async () => {
         listeners,
         ignoreReturnCode: true,
     };
+    core.debug(`Running command: ${runCommand}`);
     const exitCode = await (0, exec_1.exec)(runCommand, undefined, options);
     core.debug(`Command exited with code ${exitCode}.`);
     core.debug(`stdout: ${stdout.contents}`);
