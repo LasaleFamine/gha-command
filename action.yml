@@ -1,0 +1,17 @@
+name: GHA Command Output
+description: Run a command and store its output
+inputs:
+  run:
+    description: Command to run
+    required: true
+outputs:
+  stdout:
+    description: Output of the command
+  stderr:
+    description: Error of the command
+runs:
+  using: node16
+  main: dist/index.js
+branding:
+  icon: terminal
+  color: purple
