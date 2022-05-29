@@ -8,3 +8,4 @@ module.exports = {
   },
   watchPathIgnorePatterns: ['__file_snapshots__'],
 };
+
